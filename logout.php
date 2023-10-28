@@ -1,5 +1,7 @@
-<?php
-session_start();
-unset($_SESSION['user']);
-header("location:login.html");
+<?php session_start();
+
+if (isset($_SESSION['username'])) {
+    unset($_SESSION['username']); // xóa session login
+}
 ?>
+<a href="index.php">HOME</a>

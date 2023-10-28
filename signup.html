@@ -1,47 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        <tr>
-            <th>ĐĂNG KÝ</th>
-        </tr>
 
-        <tr>
-            <td>Full Name</td>
-            <td>
-                <input type="text" name="fname" size="30" placeholder="Nhập Fullname">
-            </td>
-        </tr>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Trang đăng lý</title>
+</head>
 
-        <tr>
-            <td>Username</td>
-            <td>
-                <input type="text" name="user" size="30" placeholder="Nhập tên">
-            </td>
-        </tr>
+<body>
+    <h1>Trang đăng ký thành viên</h1>
+    <form action="signup.php" method="POST">
+        <table cellpadding="0" cellspacing="0" border="1">
+            <tr>
+                <td>
+                    Tên đăng nhập :
+                </td>
+                <td>
+                    <input type="text" name="txtUsername" size="50" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mật khẩu :
+                </td>
+                <td>
+                    <input type="password" name="txtPassword" size="50" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email :
+                </td>
+                <td>
+                    <input type="text" name="txtEmail" size="50" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Họ và tên :
+                </td>
+                <td>
+                    <input type="text" name="txtFullname" size="50" />
+                </td>
+            </tr>
 
-        <tr>
-            <td>Password</td>
-            <td>
-                <input type="password" name="pass" size="30" placeholder="Nhập mật khẩu">
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    Giới tính :
+                </td>
+                <td>
+                    <select name="txtSex">
+                        <option value=""></option>
+                        <option value="Nam">Nam</option>
+                        <option value="Nu">Nữ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Địa chỉ :
+                </td>
+                <td>
+                    <input type="text" name="txtDiaChi" size="100" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Số điện thoại :
+                </td>
+                <td>
+                    <input type="text" name="txtPhone" size="50" />
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Đăng ký" />
+        <input type="reset" value="Nhập lại" />
+    </form>
+</body>
 
-        <tr>
-            <td>Nhập lại password</td>
-            <td>
-                <input type="password" name="repass" size="30" placeholder="Nhập lại mật khẩu">
-            </td>
-        </tr>
-
-        <tr>
-            
-            <td colspan="2" align="center">
-                <input type="reset" name="reset" value="reset"> &nbsp;&nbsp;
-                <input type="submit" name="ok" value="ok">
-            </td>
-        </tr>
-    </body>
 </html>

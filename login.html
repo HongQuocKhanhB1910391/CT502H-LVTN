@@ -5,9 +5,17 @@
 </head>
 <body>
     <form action="login.php" method="POST">
-        <input type="text" name="username" value="">
-        <input type="password" name="password" value="">
+        <h1 class="form-heading">Đăng Nhập</h1>
+        <div class="form-group">
+            <i class="far fa-user"></i>
+        <input type="text" name="username" value="" placeholder="Tên đăng nhập">
+    </div>
+        <div class="form-group">
+            <i class="far fa-key"></i>
+        <input type="password" name="password" value="" placeholder="mật khẩu">
+    </div>
         <input type="submit" name="login">
+        <input type="submit" name="Signup" herf="signup.html">
     </form>
 </body>
 </html>
